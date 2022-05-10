@@ -79,3 +79,48 @@ const normalizedEmail = loginEmail.toLocaleLowerCase().trim();
 console.log(normalizedEmail);
 console.log(email === normalizedEmail);
 
+
+const priceGB = '200,0E';
+const priceUS = priceGB.replace('E', '$').replace(',', '.');
+console.log(priceUS);
+
+const passangreMessage =
+  'all the passanger comes to door 23 for boarding .come to door 23';
+
+console.log(passangreMessage.replace('door', 'gate'));
+console.log(passangreMessage.replaceAll('door', 'gate'));
+
+const airplane = 'A320B';
+console.log(airplane.includes('A320'));
+console.log(airplane.includes('R'));
+console.log(airplane.startsWith('A32'));
+
+console.log('rayyan+faizan + abdul rehman + tabish + yasa'.split('+'));
+
+console.log('rayyan shaikh'.split(' '));
+
+// padding
+
+const message = 'Go to the gate 23';
+console.log(message.padStart('25', '+'));
+console.log(message.padEnd('30', '*'));
+
+const creditCard = (number) => {
+  const cnumber = String(number);
+  console.log(typeof cnumber);
+  const scnumber = cnumber.slice(4);
+  console.log(scnumber.padStart('10', '*'));
+};
+
+creditCard(1231232123);
+creditCard(9156321972);
+
+//repeat message
+
+const m2 = 'bad wheather flights will be late';
+console.log(m2.repeat('5'));
+//repeat message
+
+const m2 = 'bad wheather flights will be late';
+console.log(m2.repeat('5'));
+
