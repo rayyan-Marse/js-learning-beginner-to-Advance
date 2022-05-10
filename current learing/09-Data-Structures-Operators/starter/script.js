@@ -121,6 +121,6 @@ const m2 = 'bad wheather flights will be late';
 console.log(m2.repeat('5'));
 //repeat message
 
-const m2 = 'bad wheather flights will be late';
+const m3 = 'bad wheather flights will be late';
 console.log(m2.repeat('5'));
 
