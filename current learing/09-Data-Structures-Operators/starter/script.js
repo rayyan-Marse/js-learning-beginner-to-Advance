@@ -124,3 +124,21 @@ console.log(m2.repeat('5'));
 const m3 = 'bad wheather flights will be late';
 console.log(m2.repeat('5'));
 
+
+document.body.append(document.createElement('textarea'));
+document.body.append(document.createElement('button'));
+
+const text = document.querySelector('textarea').value;
+
+document.querySelector('button').addEventListener('click', () => {
+  const text = document.querySelector('textarea').value;
+  console.log(text);
+  const rows = text.split('\n');
+  console.log(rows);
+
+  for (const row of rows) {
+    const [first, last] = row.toLocaleLowerCase().trim().split('_');
+    const output = `${first}${last.replace(last[0], last[0].toUpperCase())}`;
+    console.log(output);
+  }
+});
