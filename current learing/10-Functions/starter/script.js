@@ -38,4 +38,41 @@ const checkIn = function (flightNamd, passanger) {
 
 checkIn(flightName, rayyan2);
 
+const oneWord = function (str) {
+  return str.replace(/ /g, '').toLocaleLowerCase();
+};
+
+const upperFirstWord = function (str) {
+  const [first, ...others] = str.split(' ');
+  return [first.toUpperCase(), ...others].join(' ');
+};
+
+const transormer = function (str, fn) {
+  console.log(`original string is ${str}`);
+  console.log(`transformed string ${fn(str)}`);
+  console.log(`transformed string ${fn.name}`);
+};
+
+transormer('Javascript is the best!', upperFirstWord);
+transormer('Javascript is the best!', oneWord);
+
+const high5 = function(){
+  console.log('my name is rayyan shaikh');
+};
+
+document.body.addEventListener('click',high5);
+['rayyan', 'faizan', 'baba', 'ammmi'].forEach(high5);
+
+const grret = function (greets) {
+  return function () {
+    console.log(`grreting ${greetig} ${name}`);
+  };
+};
+
+console.log('hello rayyan');
+
+const greetHey = greet('rayyan');
+greetHey('rayyan shaikh');
+greetHey('faizan shaikh');
+
 
